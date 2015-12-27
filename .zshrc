@@ -75,3 +75,4 @@ function prepend-sudo {
 }
 zle -N prepend-sudo
 bindkey "^s" prepend-sudo
+

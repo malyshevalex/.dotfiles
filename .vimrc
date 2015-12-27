@@ -6,6 +6,8 @@ Plug 'bling/vim-airline'
 Plug 'sjl/gundo.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
+" Plug 'bling/vim-bufferline'
+Plug 'klen/python-mode'
 
 call plug#end()
 
@@ -95,6 +97,16 @@ set tw=500
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Keyboard shortcuts
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Moving between tabs
+noremap <C-j> gT
+noremap <C-k> gt
+
 
 " Plugins configuration
 

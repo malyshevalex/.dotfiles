@@ -155,7 +155,7 @@ function _prompt_precmd {
     
     local virtualenv_path="$VIRTUAL_ENV"
     if [[ -n $virtualenv_path && -n $VIRTUAL_ENV_DISABLE_PROMPT ]]; then
-        _prompt_virtualenv=" %B%F{11}⚒ `basename $virtualenv_path`%f%b"
+        _prompt_virtualenv=" %B%F{11}⚒  `basename $virtualenv_path`%f%b"
     fi
 }
 
