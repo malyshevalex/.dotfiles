@@ -7,7 +7,7 @@ Plug 'sjl/gundo.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 " Plug 'bling/vim-bufferline'
-Plug 'klen/python-mode'
+" Plug 'klen/python-mode'
 
 call plug#end()
 
