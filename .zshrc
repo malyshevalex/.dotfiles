@@ -26,22 +26,11 @@ if ! zgen saved; then
 	
 	zgen oh-my-zsh
 
-	zgen oh-my-zsh plugins/archlinux
-	zgen oh-my-zsh plugins/bower
-	zgen oh-my-zsh plugins/brew-cask
-	zgen oh-my-zsh plugins/brew
-	zgen oh-my-zsh plugins/celery
 	zgen oh-my-zsh plugins/colored-man-pages
 	zgen oh-my-zsh plugins/common-aliases
-	zgen oh-my-zsh plugins/django
 	zgen oh-my-zsh plugins/git
-	zgen oh-my-zsh plugins/gulp
-	zgen oh-my-zsh plugins/node
-	zgen oh-my-zsh plugins/npm
 	zgen oh-my-zsh plugins/osx
-	zgen oh-my-zsh plugins/python
 	zgen oh-my-zsh plugins/rsync
-	zgen oh-my-zsh plugins/systemd
 	zgen oh-my-zsh plugins/tmux
 	zgen oh-my-zsh plugins/virtualenv
 	zgen oh-my-zsh plugins/virtualenvwrapper
@@ -76,4 +65,6 @@ function prepend-sudo {
 }
 zle -N prepend-sudo
 bindkey "^s" prepend-sudo
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
