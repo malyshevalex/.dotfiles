@@ -17,6 +17,8 @@ DISABLE_VENV_CD=1
 export EDITOR="vim"
 export VISUAL="vim"
 export WORKON_HOME="${HOME}/.virtualenvs"
+export GOPATH="${HOME}/.go"
+export PATH="${PATH}:${GOPATH}/bin"
 
 source "${DOTFILES}/zgen/zgen.zsh"
 
