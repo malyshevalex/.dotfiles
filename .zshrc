@@ -35,7 +35,6 @@ if ! zgen saved; then
 	zgen oh-my-zsh plugins/rsync
 	zgen oh-my-zsh plugins/tmux
 	zgen oh-my-zsh plugins/virtualenv
-	zgen oh-my-zsh plugins/virtualenvwrapper
 
 	zgen load zsh-users/zsh-syntax-highlighting
 	zgen load zsh-users/zsh-history-substring-search
