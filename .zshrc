@@ -16,9 +16,6 @@ DISABLE_VENV_CD=1
 # global variables
 export EDITOR="vim"
 export VISUAL="vim"
-export WORKON_HOME="${HOME}/.virtualenvs"
-export GOPATH="${HOME}/.go"
-export PATH="${PATH}:${GOPATH}/bin"
 
 source "${DOTFILES}/zgen/zgen.zsh"
 
@@ -34,8 +31,6 @@ if ! zgen saved; then
 	zgen oh-my-zsh plugins/osx
 	zgen oh-my-zsh plugins/rsync
 	zgen oh-my-zsh plugins/tmux
-	zgen oh-my-zsh plugins/virtualenv
-	zgen oh-my-zsh plugins/virtualenvwrapper
 
 	zgen load zsh-users/zsh-syntax-highlighting
 	zgen load zsh-users/zsh-history-substring-search
@@ -46,8 +41,6 @@ if ! zgen saved; then
 
 	zgen save
 fi
-
-[ -f ~/.zshrc_local ] && source ~/.zshrc_local
 
 # bind UP and DOWN arrow keys for substring search
 zmodload zsh/terminfo
@@ -67,6 +60,8 @@ function prepend-sudo {
 }
 zle -N prepend-sudo
 bindkey "^s" prepend-sudo
+
+[ -f ~/.rc.local ] && source ~/.rc.local
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
