@@ -2,7 +2,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-sensible'
 Plug 'altercation/vim-colors-solarized'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'sjl/gundo.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
